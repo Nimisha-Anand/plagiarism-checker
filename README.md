@@ -1,2 +1,3 @@
 # plagiarism-checker
-Plagiarism Checker is a simple plagiarism detection tool that compares text against online sources and databases to identify duplicate content.<br> It highlights similarities, calculates a plagiarism percentage, and generates a detailed report.<br> Useful for students, writers, and content creators to ensure originality.<br> 
+Plagiarism Checker is a reliable tool designed to help users verify the originality of their content.<br> By utilizing a local database, it efficiently checks whether a given text matches any previously stored content.<br> The tool provides a quick and straightforward way to identify potential plagiarism, making it ideal for students, writers, and content creators who want to ensure authenticity in their work.<br> With its simple yet effective approach, this plagiarism checker offers a hassle-free solution for maintaining originality and avoiding duplicate content.<br>
+
