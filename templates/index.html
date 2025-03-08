@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAGIARISM DETECTOR</title>
+    <style>
+        /* General Styles */
+        body {
+
+    margin: 0;
+    padding: 0;
+    background: url('https://c4.wallpaperflare.com/wallpaper/513/292/11/sketches-gradient-doodle-logo-wallpaper-preview.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+        header {
+            background: linear-gradient(150deg, #0F8C8C, #012840);
+            color: #fff;
+            font-weight: bold;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        main {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+textarea {
+    width: 80%; /* Reduced width to 80% */
+    height: 200px; /* Added height to control vertical size */
+    padding: 20px; /* Increased padding for better spacing */
+    font-family: italic;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 0 auto 20px; /* Centered horizontally and added spacing below */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    resize: none; /* Disabled resizing */
+    text-align: left; /* Aligned text to the left inside the textarea */
+}
+
+
+        button {
+            background: linear-gradient(180deg, #0F8C8C, #025959);
+            color: #fff;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(180deg,#025959, #0F8C8C);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #2575fc;
+            margin-top: 30px;
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+ footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    position: fixed; /* Ensure footer stays at the bottom of the screen */
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            main {
+                margin: 20px 15px;
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            button {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PLAGIARISM BUSTERS</h1>
+    </header>
+    <main>
+        <form action="/detect" method="POST">
+            <label for="text">Enter Text to Check:</label>
+            <textarea name="text" id="text" rows="10" placeholder="Type or paste your text here..." required></textarea>
+            <button type="submit">Check for Plagiarism</button>
+        </form>
+
+        {% if result %}
+        <h2><font color="#0F8C8C">Detection Result:</font></h2>
+            <p>{{ result }}</p>
+        {% endif %}
+    </main>
+    <footer>
+        <p>&copy; 2025 Plagiarism Detector | All rights reserved.</p>
+    </footer>
+</body>
+</html>
