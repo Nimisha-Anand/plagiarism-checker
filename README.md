@@ -9,8 +9,5 @@ Libraries: NLTK, Pandas, String, Scikit-learn<br>
 Python Version: 3.12.4<br>
 Scikit-learn Version: 1.6.1<br>
 
-<video width="600" controls>
-  <source src="C:\Users\Shivendra\Downloads\project demo.mp4" type="video/mp4">
-</video>
-
+[▶ Watch the Demo](https://github.)
 
