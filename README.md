@@ -9,5 +9,5 @@ Libraries: NLTK, Pandas, String, Scikit-learn<br>
 Python Version: 3.12.4<br>
 Scikit-learn Version: 1.6.1<br>
 
-[▶ Watch the Demo](https://github.)
+[▶ Watch the Demo](https://github.com/Nimisha-Anand/plagiarism-checker/blob/main/project%20demo.mp4)
 
